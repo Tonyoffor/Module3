@@ -12,6 +12,9 @@ function writePassword() {
 
   passwordText.value = password;
 
+  //  if(password) = < 8 or > 128
+  //console.log("Please make sure password is between 8 to 128 characters")
+
 }
 
 // Add event listener to generate button
