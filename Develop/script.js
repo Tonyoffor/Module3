@@ -1,17 +1,22 @@
 // Assignment code here
-var generatePassword = 
-var password
-var expression 
+var password = document.querySelector("#password")
+var generate = document.querySelector("#generate") 
+
+counter = 0
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+  if(counter > 0){
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
+} else 
+
+
+  generateBtn.addEventListener("click", writePassword)
 
   //  if(password) (=> 8, =< 128) then true ; if false then console.log("Please make sure password is between 8 to 128 characters")
   //if(password == =>8, =<128){
@@ -29,5 +34,3 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
