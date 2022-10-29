@@ -8,11 +8,11 @@ GIVEN I need a new, secure password
 WHEN I click the button to generate a password
 THEN I am presented with a series of prompts for password criteria (need an array around here)
 WHEN prompted for password criteria
-THEN I select which criteria to include in the password
+THEN I select which criteria to include in the password (half done)
 WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters (my if, else that i think I have in my js)
+THEN I choose a length of at least 8 characters and no more than 128 characters (done)
 WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters (Do i hae to add this to the html?)
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters (list of character type and their arrey ready)
 WHEN I answer each prompt
 THEN my input should be validated and at least one character type should be selected
 WHEN all prompts are answered
