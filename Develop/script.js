@@ -26,7 +26,7 @@ var generateBtn = document.querySelector("#generate");
 
 
 function startPrompts() {
-passwordcriteria = prompt ('Please Select Password Criteria. Type 1 for numeric. 2 for special . 3 for upper .  4 for lowe . 5 for combination');
+passwordcriteria = prompt ('Please Select Password Criteria. Type 1 for numeric. 2 for special characters . 3 for uppercase.  4 for lowercase . 5 for combination');
 var passwordlength = prompt ("Enter password Lenght . Please choose a number between 8 and 128 characters");
   while (passwordlength < 8 || passwordlength > 128)
   { 
@@ -37,7 +37,7 @@ var passwordlength = prompt ("Enter password Lenght . Please choose a number bet
    //So below are the remaining prompts used in a different if statment
 if (isNaN(passwordcriteria) || password < 1 || password > 5){ 
   prompt ('Please enter number between 1 and 5');
-  passwordcriteria = prompt ('Please Select Password Criteria . Type 1 for numeric . 2 for special . 3 for upper . 4 for lowe . 5 for combination');
+  passwordcriteria = prompt ('Please Select Password Criteria . 1 for numeric . 2 for special characters. 3 for uppercase . 4 for lowercase . 5 for combination');
 
 }
 var password = "";
@@ -91,20 +91,8 @@ if(parseInt(passwordcriteria) == 2){
         }
         console.log(password);
         } 
-        document.getElementById('#password').innerHTML = password
+        document.getElementById('password').innerHTML = password
 }
-
-//return generatePassword();
-
-
-// Write password to the #password input
-function generatePassword()
-{
-
-}
-  var passwordText = document.querySelector("password");
-
-
 
 
   //  if(password) (=> 8, =< 128) then true ; if false then console.log("Please make sure password is between 8 to 128 characters")
