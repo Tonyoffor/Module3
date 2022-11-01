@@ -14,17 +14,13 @@ const specialcharacters = ['~', '!', '@', '#', '$', '%', '^', '&', '*', '/','?',
 const allvariables = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRTSUVWXYZ1234567890~!@#$%^&*?/<>";
 //I used var here because I want these prompts to change when called by user, secondly I set my boolians to falsey because I want to provide it as a prompt for the user to call/check 
 var passwordlength = 0; 
-var passwordText = '';
 var usercallLowerCase = false;
 var usercallUpperCase = false;
 var usercallnumeric = false;
 var usercallspecialcharacters = false;
 var passwordcriteria = "";
 
-var generateBtn = document.querySelector("#generate");
-
-
-
+//for the prompts you can use alert instead
 function startPrompts() {
 passwordcriteria = prompt ('Please Select Password Criteria, Type: (1) for numeric. (2) for special characters. (3) for uppercase.  (4) for lowercase. (5) for combination.');
 var passwordlength = prompt ("Enter password Lenght . Please choose a number between 8 and 128 characters");
@@ -91,23 +87,6 @@ if(parseInt(passwordcriteria) == 2){
         }
         console.log(password);
         } 
-        document.getElementById('password').innerHTML = password
+        document.getElementById('password').innerText = password
 }
-
-
-  //  if(password) (=> 8, =< 128) then true ; if false then console.log("Please make sure password is between 8 to 128 characters")
-  //if(password == =>8, =<128){
-// Console.log("generatePassword");
-  //}else console.log Please make sure password is between 8 to 128 character
-
-  // if password => 1 text.uppercase then true
-  // The password is true if it has all these factors are true; I should have some funky looking && && mix then generate a math.random password that meets all criteria
-
-  //function validate(obj, lowval, hival) {
- // if ((obj.value < lowval) || (obj.value > hival)) {
-   // console.log('Invalid Value!');
-
-// add an event listener on click
-
-
 

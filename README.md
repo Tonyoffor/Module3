@@ -1,6 +1,8 @@
 # Module3
 ## Random Code Generator
-In this challenge we are meant to 
+In this challenge we are meant to create a password generator; using the provided HTML and Style.css by creating the Javascript functionality
+
+
 
 
 
@@ -20,6 +22,6 @@ THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or s
 WHEN I answer each prompt
 THEN my input should be validated and at least one character type should be selected 
 WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
+THEN a password is generated that matches the selected criteria (done)
 WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+THEN the password is either displayed in an alert or written to the page (done)
